@@ -7,12 +7,14 @@
     box-sizing: border-box;    
 }
 
-html{
+html,
+body{
     color:#000;
     font-family: 'Lato','Arial', sans-serif;
     font-size: 20px;
     font-weight:300;
-    text-rendering: optimizeLegibility;    
+    text-rendering: optimizeLegibility;
+    overflow-x:hidden;
 }
 
 .row{
@@ -32,7 +34,6 @@ html{
 header{
     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/hero.jpg);
     background-size: cover;
-    background-position: center;
     height: 100vh;
     background-attachment: fixed;
 }
@@ -40,15 +41,13 @@ header{
     padding: 1%;
 }
 
-.box3{
-    margin: 0px;
-}
 .hero-text-box{
     position: absolute;
     width: 1140px;
-    top: 40%;
-    left:15%;
+    top: 50%;
+    left:57%;
     color:azure;
+    transform: translate(-50%,-50%);
 }
 
 h2,h3{    
@@ -172,8 +171,9 @@ input[type = submit]:active
     height:15%;
     width:auto;
     float:left;
-    margin-top:20px;
-    margin-left:200px;
+    position: absolute;
+    top:2.5%;
+    left:15%;
 }
 
 /*-------NAVIGATIONS--------*/
